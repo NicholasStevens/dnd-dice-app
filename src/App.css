@@ -21,14 +21,15 @@
 
 .result {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
   height: 100px;
-  width: 100px;
+
   font-size: calc(20px + 2vmin);
   color: red;
   border: 2px solid lime;
-  margin-left: 46.5%;
   margin-bottom: 30px;
 }
 
