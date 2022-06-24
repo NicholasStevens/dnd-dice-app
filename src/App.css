@@ -38,24 +38,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: calc(20px + 2vmin);
+  font-size: 50px;
   min-height: auto;
   margin-bottom: 15px;
 }
 
-.dice20 {
-  background-color: limegreen;
-}
-
-.dice12 {
-  background-color: limegreen;
-}
-.dice10 {
-  background-color: limegreen;
-}
-.dice8 {
-  background-color: limegreen;
-}
-.dice6 {
-  background-color: limegreen;
+.dice > button {
+  background-color: lime;
 }
