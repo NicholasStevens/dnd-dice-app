@@ -15,7 +15,8 @@ export default function Spells() {
     getSpells();
   }, []);
   return (
-    <div>
+    <div className="body">
+      <h1>List of spells</h1>
       {spells ? (
         spells.map((spell, i) => (
           <SpellCard key={i} name={spell.name} index={spell.index} />

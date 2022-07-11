@@ -10,14 +10,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Throw The Bones</h1>
+      </header>
+      <div className="nav-app">
         <NavLink to="/">HOME</NavLink>
         <NavLink to="/roll">Roll Dice</NavLink>
-      </header>
-      <Routes>
-        <Route path="/roll" element={<DiceRoll />} />
-        <Route path="/" element={<Spells />} />
-        <Route path="/spells/:index" element={<SpellDetails />} />
-      </Routes>
+      </div>
+      <div classNam="body">
+        <Routes>
+          <Route path="/roll" element={<DiceRoll />} />
+          <Route path="/" element={<Spells />} />
+          <Route path="/spells/:index" element={<SpellDetails />} />
+        </Routes>
+      </div>
     </div>
   );
 }

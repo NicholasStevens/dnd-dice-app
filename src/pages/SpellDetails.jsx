@@ -18,9 +18,10 @@ export default function SpellDetails() {
   }, []);
 
   return specificSpell ? (
-    <div>
+    <div className="body">
       <h3>{specificSpell.name}</h3>
-      <p>Type: {specificSpell.attack_type}</p>
+      <p>Casting time: {specificSpell.casting_time}</p>
+      <p>Duration: {specificSpell.duration}</p>
       <p>Range: {specificSpell.range}</p>
       <p>Description: {specificSpell.desc}</p>
     </div>
