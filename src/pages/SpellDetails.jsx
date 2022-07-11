@@ -15,7 +15,7 @@ export default function SpellDetails() {
       setSpecificSpell(response.data);
     }
     fetchSpell();
-  }, []);
+  });
 
   return specificSpell ? (
     <div className="body">
