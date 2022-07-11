@@ -20,7 +20,7 @@ export default function Spells() {
     if (params.filter) {
       setFilter(params.filter);
     }
-  }, []);
+  });
 
   const updateFilter = (e) => {
     setFilter(e.target.value);
