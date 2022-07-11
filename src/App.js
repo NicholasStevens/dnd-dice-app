@@ -18,7 +18,9 @@ function App() {
       <div classNam="body">
         <Routes>
           <Route path="/roll" element={<DiceRoll />} />
-          <Route path="/" element={<Spells />} />
+          <Route path="/" element={<Spells />}>
+            <Route path=":filter" element={<Spells />} />
+          </Route>
           <Route path="/spells/:index" element={<SpellDetails />} />
         </Routes>
       </div>
