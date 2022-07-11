@@ -20,7 +20,8 @@ export default function Spells() {
     if (params.filter) {
       setFilter(params.filter);
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const updateFilter = (e) => {
     setFilter(e.target.value);
